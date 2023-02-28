@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(images/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#options button:hover{
+    background-color: cyan !important;
+    border: 1px solid cyan !important;
+    color: black !important;
+}
+.shakePlayer{
+    animation: shakePlayer 1s linear;
+}
+.shakeComputer{
+    animation: shakeComputer 1s linear;
+}
+@keyframes shakePlayer {
+    0% {
+        transform: rotate(-30deg);
+    }
+    20% {
+        transform: rotate(30deg);
+    }
+    40% {
+        transform: rotate(-30deg);
+    }
+    60% {
+        transform: rotate(30deg);
+    }
+    80% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes shakeComputer {
+    0% {
+        transform: rotate(30deg);
+    }
+    20% {
+        transform: rotate(-30deg);
+    }
+    40% {
+        transform: rotate(30deg);
+    }
+    60% {
+        transform: rotate(-30deg);
+    }
+    80% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
