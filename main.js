@@ -9,8 +9,8 @@ const options = document.querySelectorAll("#options button");
 
 options.forEach((option) => {
     option.addEventListener("click", () => {
-        player.src = "images/stonePlayer.png"
-        computer.src ="images/stoneComputer.png"
+        player.src = "images/STONEPlayer.png"
+        computer.src ="images/STONEComputer.png"
         player.classList.add("shakePlayer");
         computer.classList.add("shakeComputer");
 
