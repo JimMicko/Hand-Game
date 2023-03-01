@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center">
+        <div class="col">
+            <div class="rows d-flex justify-content-center align-items-center">
+                <div class="col d-flex justify-content-end">
+                    <button id="newGameBtn" onclick="newGame()" type="button" class="col-8 " style="background-color: green; height: 50px;">
+                        <h2 class="text-center text-white">New Game</h2>
+                    </button>
+                </div>
+                <div class="col-5 d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 100px;">
+                        <div id="header" class="d-flex justify-content-center align-items-center me-5 fs-1 fw-bold mt-1" style="display: none;">
+                            ROUND
+                        </div>
+                        <span id="round" class="d-flex justify-content-center align-items-center fs-1 fw-bold" style="display: none;">
+                            0
+                        </span>
+                        <span id="round" class="d-flex justify-content-center align-items-center fs-1 fw-bold" style="display: none;">
+                            /10
+                        </span>
+                    </div>
+                    <div id="result" class="d-flex justify-content-center fs-1 fw-bold mt-1 mb-1" style="height: 50px   ;">
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- <button onclick="showHistory()" type="button" class="col-8 " style="background-color: black; height: 50px;">
+                        <h2 class="text-center text-white">Match History</h2>
+                    </button> -->
+                </div>
+            </div>
+            <div class="rows d-flex justify-content-between">
+                <div class="col-5 d-flex justify-content-center">
+                    <h2 class="d-flex justify-content-center align-items-center text-center fw-bold me-5 my-0">PLAYER</h2>
+                    <span id="playerScore" class="d-flex justify-content-center align-items-center fw-bold fs-2">0</span>
+                </div>
+                <div class="col-5 d-flex justify-content-center">
+                    <span id="computerScore" class="d-flex justify-content-center align-items-center fw-bold fs-2">0</span>
+                    <h2 class="d-flex justify-content-center align-items-center text-center fw-bold ms-5 my-0">COMPUTER</h2>
+                </div>
+            </div>
+            <div class="rows d-flex flex-wrap align-items-center justify-content-between" style="height: 400px;">
+                <div class="col-5 d-flex align-items-center justify-content-center">
+                    <img id="player" src="images/STONEPlayer.png">
+                </div>
+                <h2 class="fs-1 fw-bold">Vs</h2>
+                <div class="col-5 d-flex align-items-center justify-content-center">
+                    <img id="computer" src="images/STONEComputer.png">
+                </div>
+            </div>
+            <div id="options" class="rows d-flex justify-content-around mx-5">
+                <button id="stone" type="button" class="col-3 bg-dark fs-4 fw-bold text-white p-3">STONE</button>
+                <button id="paper" type="button" class="col-3 bg-dark fs-4 fw-bold text-white p-3">PAPER</button>
+                <button id="scissors" type="button" class="col-3 bg-dark fs-4 fw-bold text-white p-3">SCISSORS</button>
+            </div>
+            <div id="finalResult" class="d-flex justify-content-center align-items-center fs-1 fw-bold mt-5">
+            </div>
+            <div id="winner" class="d-flex justify-content-center align-items-center fs-1 fw-bold">
+            </div>
+            <div id="gameCount" style="display: none;">
+                1
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
